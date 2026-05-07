@@ -60,7 +60,7 @@ while(userQuery!="exit"):
     userQuery = input("> ")
 
 #writing to a txt file
-with open ("chat_with_bot.txt", 'a') as file:
+with open ("output/chat_with_bot.txt", 'a') as file:
     currentT= datetime.now().strftime("%Y-%m-%d %H:%M")
     file.write(f"new chat\n Time: [{currentT}]\n")
     for entry in messagesHist:
