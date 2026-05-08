@@ -1,9 +1,8 @@
 #
 '''
 This is a sample proejct of basic connection to OPENAI API directly
-message is a dic with role and content as user's msg
+message is a dic with role and content as user/assistant msg to keep the history
 '''
-import json
 
 from openai import OpenAI
 from dotenv import load_dotenv
@@ -41,9 +40,28 @@ def askBot(messagesHist):
     addMsgToHistory(messagesHist, responseContent, "assistant")
     return responseContent
 
+#this func prints result using stream using chunck of available events to improve latency and user experience
+def askBotWithStreaming(messageHist):
+
+    stream=client.chat.completions.create(
+        messages=messageHist,model=selected_model, max_tokens=maxToken , stream=True)
+    response=""
+    for chunk in stream:
+        #extract text
+        content=chunk.choices[0].delta.content
+        if content:
+            response+=content
+            print(content,end="",flush=True) # show content as it arrives contiguously
+    # update the history
+    addMsgToHistory(messagesHist, response, "assistant")
+    return response
+
 # helper function to update the history
 def addMsgToHistory(messagesHist, content, role):
     messagesHist.append({"role": role, "content": content})
+
+
+
 
 
 ############################# Starting the main chatBot app #################
@@ -55,9 +73,10 @@ userQuery=input("> ")
 while(userQuery!="exit"):
 
     addMsgToHistory(messagesHist,userQuery ,"user")
-    result_1 = askBot(messagesHist)
-    print(result_1)
-    userQuery = input("> ")
+    #result_1 = askBot(messagesHist)
+    #print(result_1)
+    askBotWithStreaming(messagesHist)
+    userQuery = input("\n> ")
 
 #writing to a txt file
 with open ("output/chat_with_bot.txt", 'a') as file:

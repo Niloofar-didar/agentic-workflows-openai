@@ -1,0 +1,37 @@
+
+ Time: [2026-05-07 13:54]
+{'role': 'system', 'content': "You're a python engineer who writes very concise code. No explanations, no comments"}
+{'role': 'user', 'content': 'generate a very short user profile info as json'}
+{'role': 'assistant', 'content': '{"name":"John Doe","age":30,"email":"johndoe@example.com","city":"New York"}'}
+
+
+
+ Time: [2026-05-07 16:15]
+{'role': 'system', 'content': "You're a python engineer who writes very concise code. Output ONLY minified code. No newlines, no indentation, no whitespace between keys and values.No explanations, no comments"}
+{'role': 'user', 'content': '\nGenerate an evaluation dataset for a prompt evaluation.\nThe dataset will be used to evaluate prompts that generate Python, JSON, or Regex specifically for \npersonal email automation and data extraction task. Generate an array of JSON objects, each representing task that requires Python, JSON, or a Regex to complete.\n\nExample output:\n```json\n[\n  {\n    "task": "Description of task",\n  },\n  ...additional\n]\n```\ngenerate 3 objects . Each \'task\' description must be exactly one sentence and no more than 10 words."\n"* Generate diverse tasks related to personal productivity, inbox organization, and extracting info from everyday consumer emails."\n* the tasks should be solved by writing a single Python function, a single JSON object, or a single regex without requiring writing much code\n'}
+{'role': 'assistant', 'content': '{"tasks":[{"task":"Extract email addresses from a text."},{"task":"Parse JSON data for invoice details."},{"task":"Match date formats in email content."}]}'}
+
+
+ Time: [2026-05-07 16:17]
+{'role': 'system', 'content': "You're a python engineer who writes very concise code. Output ONLY minified code. No newlines, no indentation, no whitespace between keys and values.No explanations, no comments"}
+{'role': 'user', 'content': '\nGenerate an evaluation dataset for a prompt evaluation.\nThe dataset will be used to evaluate prompts that generate Python, JSON, or Regex specifically for \npersonal email automation and data extraction task. Generate an array of JSON objects, each representing task that requires Python, JSON, or a Regex to complete.\n\nExample output:\n```json\n[\n  {\n    "task": "Description of task",\n  },\n  ...additional\n]\n```\ngenerate 3 objects . Each \'task\' description must be exactly one sentence and no more than 12 words."\n"* Generate diverse tasks related to personal productivity, inbox organization, and extracting info from everyday consumer emails."\n* the tasks should be solved by writing a single Python function, a single JSON object, or a single regex without requiring writing much code\n'}
+{'role': 'assistant', 'content': '{"tasks":[{"task":"Extract sender email addresses from a list of emails."},{"task":"Convert email content to JSON format for easy access."},{"task":"Find all dates mentioned in a consumer email."}]}'}
+
+
+ Time: [2026-05-07 16:30]
+{'role': 'system', 'content': "You're a python engineer who writes very concise code. Output ONLY minified code. No newlines, no indentation, no whitespace between keys and values.No explanations, no comments"}
+{'role': 'user', 'content': '\nGenerate an evaluation dataset for a prompt evaluation.\nThe dataset will be used to evaluate prompts that generate Python, JSON, or Regex specifically for \npersonal email automation and data extraction task. Generate an array of JSON objects, each representing task that requires Python, JSON, or a Regex to complete.\n\nExample output:\n```json\n[\n  {\n    "task": "Description of task",\n  },\n  ...additional\n]\n```\ngenerate 3 objects . Each \'task\' description must be exactly one sentence and no more than 13 words."\n"* Generate diverse tasks related to personal productivity, inbox organization, and extracting info from everyday consumer emails."\n* the tasks should be solved by writing a single Python function, a single JSON object, or a single regex without requiring writing much code\n'}
+{'role': 'assistant', 'content': '{"tasks":[{"task":"Write a Python function to filter emails by sender."},{"task":"Create a JSON object to store email contacts and their labels."},{"task":"Use regex to extract dates from email content."}]}'}
+
+
+ Time: [2026-05-07 16:31]
+{'role': 'system', 'content': "You're a python engineer who writes very concise code. Output ONLY minified code. No newlines, no indentation, no whitespace between keys and values.No explanations, no comments"}
+{'role': 'user', 'content': '\nGenerate an evaluation dataset for a prompt evaluation.\nThe dataset will be used to evaluate prompts that generate Python, JSON, or Regex specifically for \npersonal email automation and data extraction task. Generate an array of JSON objects, each representing task that requires Python, JSON, or a Regex to complete.\n\nExample output:\n```json\n[\n  {\n    "task": "Description of task",\n  },\n  ...additional\n]\n```\ngenerate 3 objects . Each \'task\' description must be exactly one sentence and no more than 12 words."\n"* Generate diverse tasks related to personal productivity, inbox organization, and extracting info from everyday consumer emails."\n* the tasks should be solved by writing a single Python function, a single JSON object, or a single regex without requiring writing much code\n'}
+{'role': 'assistant', 'content': '{"tasks":[{"task":"Extract email addresses from a list of consumer emails."},{"task":"Filter emails containing receipts from a given date range."},{"task":"Convert email data to JSON format for easier processing."}]}'}
+
+
+ Time: [2026-05-07 16:34]
+{'role': 'system', 'content': "You're a python engineer who writes very concise code. Output ONLY minified code. No newlines, no indentation, no whitespace between keys and values.No explanations, no comments"}
+{'role': 'user', 'content': '\nGenerate an evaluation dataset for a prompt evaluation.\nThe dataset will be used to evaluate prompts that generate Python, JSON, or Regex specifically for \npersonal email automation and data extraction task. Generate an array of JSON objects, each representing task that requires Python, JSON, or a Regex to complete.\n\nExample output:\n```json\n[\n  {\n    "task": "Description of task",\n  },\n  ...additional\n]\n```\ngenerate 3 objects . Each \'task\' description must be exactly one sentence and no more than 12 words."\n"* Generate diverse tasks related to personal productivity, inbox organization, and extracting info from everyday consumer emails."\n* the tasks should be solved by writing a single Python function, a single JSON object, or a single regex without requiring writing much code\n'}
+{'role': 'assistant', 'content': '{"tasks":[{"task":"Extract sender names from a list of emails."},{"task":"Convert email subjects into a JSON object format."},{"task":"Match personal email addresses using a regex pattern."}]}'}
+
