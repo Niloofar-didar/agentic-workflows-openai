@@ -19,29 +19,12 @@ This is to enable generating codes, and sample dataSet (json files) for prompt q
 Each response will be graded and compared to another round of prompt generation. the purpose is to train and generate a better prompt 
 that results in a result with higher quality. i.e., higher score. The overview of this project is shown in the following, with dataset on left, AI model that process the input and generates results and result at right.
 
-+-----------------------+           +-----------+           +-----------------------+
-
-|  EVALUATION DATASET   |           |  AI MODEL |           | EVALUATION RESULTS    |
-|   (Questions/Inputs)  |           | (Evaluator)|          | (Responses + Scores)  |
-+-----------------------+           +-----------+           +-----------------------+
-
-| 1. "Summarize the..." | --------> |  LLM-Eval | --------> | Resp: [Summary] (Score: 9) |
-| 2. "Write a poem..."  | --------> |  System   | --------> | Resp: [Poem]    (Score: 8) |
-| 3. "Translate..."     | --------> |  Prompt   | --------> | Resp: [Trans]   (Score:10) |
-+-----------------------+           +-----------+           +-----------------------+
+![img.png](img.png)
 
 The grading system is done using the two approaches: 1-code format evaluator leveraging python packages to check the output format, and 2- using AI system for grading the result with a scale of 1-10.
 The test results sample is as below, also provided in output/prompt_evaluation.json.
 
-{
-  "score": 3.5,
-  "reasoning": "Overall, a basic but functional solution.",
-  "test_case": {
-    "task": "Extract email addresses from a list of consumer emails.",
-    "format": "python"
-  },
-  "output": "import re;emails=[\"alice@example.com\",\"bob"
-},
+```json
 {
   "score": 8.5,
   "reasoning": "Effectively identifies valid emails overall",
@@ -51,3 +34,4 @@ The test results sample is as below, also provided in output/prompt_evaluation.j
   },
   "output": "import re;emails=[\"example1@example.com\",\"not_an_email\",\"test@email.com\",\"hello@world.com\"];valid_emails=[email for email in emails if re.match(r\"[^@]+@[^@]+\\.[^@]+\",email)];print(valid_emails)"
 },
+```
