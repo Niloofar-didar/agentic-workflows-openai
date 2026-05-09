@@ -19,7 +19,8 @@ This is to enable generating codes, and sample dataSet (json files) for prompt q
 Each response will be graded and compared to another round of prompt generation. the purpose is to train and generate a better prompt 
 that results in a result with higher quality. i.e., higher score. The overview of this project is shown in the following, with dataset on left, AI model that process the input and generates results and result at right.
 
-![img.png](img.png)
+<img width="744" height="234" alt="image" src="https://github.com/user-attachments/assets/9f275f4b-e84c-4833-aeb1-a7a3724c3e89" />
+
 
 The grading system is done using the two approaches: 1-code format evaluator leveraging python packages to check the output format, and 2- using AI system for grading the result with a scale of 1-10.
 The test results sample is as below, also provided in output/prompt_evaluation.json.
