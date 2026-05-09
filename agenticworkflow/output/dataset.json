@@ -1,0 +1,16 @@
+{
+  "tasks": [
+    {
+      "task": "Extract email addresses from a list of consumer emails.",
+      "format": "python"
+    },
+    {
+      "task": "Extract product names from order confirmation emails and structure them into a shopping history list.",
+      "format": "json"
+    },
+    {
+      "task": "Convert email data to JSON format for easier processing.",
+      "format": "python"
+    }
+  ]
+}

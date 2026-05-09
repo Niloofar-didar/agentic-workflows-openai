@@ -1,6 +1,7 @@
 #
 '''
-This project is with regard to best practices to use openAPI for code generation
+This project is with regard to best practices to use openAPI for code/dataset generation
+
 
 To avoid header and footer for AI response, you need to include it as assistant message and stop_sequence (stop in openAPI) for claude API so that
 the API reads the beginning and assumes it's included, so it won't include the token
@@ -19,7 +20,7 @@ client= OpenAI()
 selected_model= "gpt-4o-mini"
 maxToken=65
 
-def askBot(messagesHist, responseFormat):
+def askBot(messagesHist, responseFormat, maxT):
 
     apiParameter={
         "messages" : messagesHist,
@@ -28,6 +29,8 @@ def askBot(messagesHist, responseFormat):
 
     if responseFormat:
         apiParameter["response_format"]=responseFormat
+    if maxT:
+        apiParameter["max_tokens"]=maxT
 
     response= client.chat.completions.create(**apiParameter)
     responseContent=response.choices[0].message.content
@@ -61,29 +64,31 @@ generate 3 objects . Each 'task' description must be exactly one sentence and no
 * the tasks should be solved by writing a single Python function, a single JSON object, or a single regex without requiring writing much code
 """
     addMsgToHistory(messages,prompt,"user")
-    tasks= askBot(messages, responseFormat={ "type": "json_object" })
+    tasks= askBot(messages, responseFormat={ "type": "json_object" },maxT=None)
     json_output= json.loads(tasks.strip())
-    writeToFile(messages)
-    writeToDataset(json_output)
+    writeToFile(messages, fDir="output/code_assistant.txt")
+    writeToDataset(json_output, fileDir='output/dataset.json')
     return json_output
 
-def writeToDataset(json_output):
-    with open ('dataset.json','a') as f:
+def writeToDataset(json_output, fileDir):
+    with open (fileDir,'a') as f:
+        if fileDir:
+           f.write(',\n')  # Add comma before the next item
         json.dump(json_output,f,indent=2)
 
 def jsonCreator(messagesHist):
     userQuery="generate a very short user profile info as json"
 
     addMsgToHistory(messagesHist,userQuery ,"user")
-    result_1 = askBot(messagesHist, responseFormat={ "type": "json_object" }) # This forces valid JSON)
+    result_1 = askBot(messagesHist, responseFormat={ "type": "json_object" },maxT=None) # This forces valid JSON)
     json_output= json.loads(result_1.strip())
     print(json_output)
-    writeToFile(messagesHist)
+    writeToFile(messagesHist, fDir="output/code_assistant.txt" )
 
 
-def writeToFile (message):
+def writeToFile (message, fDir):
     #writing to a txt file
-    with open ("output/code_assistant.txt", 'a') as file:
+    with open (fDir, 'a') as file:
       currentT= datetime.now().strftime("%Y-%m-%d %H:%M")
       file.write(f"\n Time: [{currentT}]\n")
       for entry in message:
@@ -99,8 +104,5 @@ messagesHist = [{"role": "system", "content": "You're a python engineer who writ
                 " Output ONLY minified code. No newlines, no indentation, no whitespace between keys and values.No explanations, no comments"}]
 dataset= generate_dataset(messagesHist)
 
-#Load the data and write to File
-#jsonfile=json.loads(dataset)
-#dataset='{"tasks":[{"task":"Extract email addresses from a list of consumer emails."},{"task":"Filter emails containing receipts from a given date range."},{"task":"Convert email data to JSON format for easier processing."}]}'
 
 writeToDataset(dataset)

@@ -1,0 +1,36 @@
+{
+  "score": 3.5,
+  "reasoning": "Overall, a basic but functional solution.",
+  "test_case": {
+    "task": "Extract email addresses from a list of consumer emails.",
+    "format": "python"
+  },
+  "output": "import re;emails=[\"alice@example.com\",\"bob"
+},
+{
+  "score": 8.5,
+  "reasoning": "Effectively identifies valid emails overall",
+  "test_case": {
+    "task": "Extract email addresses from a list of consumer emails.",
+    "format": "python"
+  },
+  "output": "import re;emails=[\"example1@example.com\",\"not_an_email\",\"test@email.com\",\"hello@world.com\"];valid_emails=[email for email in emails if re.match(r\"[^@]+@[^@]+\\.[^@]+\",email)];print(valid_emails)"
+},
+{
+  "score": 8.5,
+  "reasoning": "Adequately structured but lacks details",
+  "test_case": {
+    "task": "Extract product names from order confirmation emails and structure them into a shopping history list.",
+    "format": "json"
+  },
+  "output": "{\"shopping_history\":[{\"product_name\":\"Wireless Mouse\"},{\"product_name\":\"Bluetooth Headphones\"},{\"product_name\":\"USB-C Charger\"},{\"product_name\":\"Laptop Stand\"},{\"product_name\":\"4K Monitor\"}]}"
+},
+{
+  "score": 2.5,
+  "reasoning": "Partially fulfills the task requirements.",
+  "test_case": {
+    "task": "Convert email data to JSON format for easier processing.",
+    "format": "python"
+  },
+  "output": "{\"emails\":[{\"from\":\"example1@example.com\",\"to\":\"recipient1@example.com\",\"subject\":\"Subject 1\",\"body\":\"This is the body of the first email.\"},{\"from\":\"example2@example.com\",\"to\":\"recipient2@example.com\",\"subject\":\"Subject 2\",\"body\":\"This is"
+},
