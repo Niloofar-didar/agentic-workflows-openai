@@ -25,8 +25,8 @@ This setup enables the core LLM pipeline, including:
 ---
 
 ## Projects I Started With (In Order)
-1.  **Project One Name** - Short description.
-2.  **Project Two Name** - Short description.
+
+![](../../OneDrive - Wayne State University/Documents/Agentic AI learning/agent-time-calculator.png)
 
 
 1- **chatBot.py**
@@ -59,5 +59,13 @@ The test results sample is as below, also provided in output/prompt_evaluation.j
     "format": "python"
   },
   "output": "import re;emails=[\"example1@example.com\",\"not_an_email\",\"test@email.com\",\"hello@world.com\"];valid_emails=[email for email in emails if re.match(r\"[^@]+@[^@]+\\.[^@]+\",email)];print(valid_emails)"
-},
+}
 ```
+
+** 4- A reminder Tool - Connectivity to external services  **
+For some applications, AI may not know the exact solution or may require extra info to act upon. For instance, if we ask AI to remind us in 4 hours, it requires accessing some tools such as the current datetime, calculating the alarm time from now (duration), and a reminder set to send the user and alert.
+For that, in our server we need to enable a tool on our server. We start with creating a tool to calculate the time, we use an schema to show AI models how the tools work. The AI model generates the expected input, sent it back to our server, then in our server, we run the built tool and reply to AI model with the result and the expected output format.
+Finally, the AI model generates the final output to be shown to the end user.
+This flow is shown through the image below taken from https://anthropic.skilljar.com/claude-with-the-anthropic-api/287752
+
+![img_1.png](img_1.png)

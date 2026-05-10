@@ -13,4 +13,667 @@
       "format": "python"
     }
   ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract email addresses from a list of strings."
+    },
+    {
+      "task": "Convert a list of tasks into a JSON format."
+    },
+    {
+      "task": "Validate email format using a regex pattern."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract shipping information from an order confirmation email."
+    },
+    {
+      "task": "Parse a personal email to find meeting dates and times."
+    },
+    {
+      "task": "Convert a list of email contacts to JSON format."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract the sender's email from a consumer email."
+    },
+    {
+      "task": "Convert email to JSON format for easy processing."
+    },
+    {
+      "task": "Match invoice numbers in emails using regex."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract purchase amounts from online shopping emails."
+    },
+    {
+      "task": "Filter emails containing receipts from specific vendors."
+    },
+    {
+      "task": "Parse email subject lines for meeting invites."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract order confirmation number from consumer emails."
+    },
+    {
+      "task": "Parse personal emails to find upcoming event dates."
+    },
+    {
+      "task": "Identify and categorize email addresses in a contact list."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender email addresses from a list of emails."
+    },
+    {
+      "task": "Format emails into a JSON object for storage."
+    },
+    {
+      "task": "Find all occurrences of dates in email content."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract the sender's email from a given string."
+    },
+    {
+      "task": "Sort emails by date in descending order."
+    },
+    {
+      "task": "Validate if an email address follows standard format."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender email addresses from Gmail messages."
+    },
+    {
+      "task": "Convert CSV contact list to JSON format."
+    },
+    {
+      "task": "Regex for finding order confirmation numbers in emails."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract coupon codes from promotional emails."
+    },
+    {
+      "task": "Organize emails by sender into separate folders."
+    },
+    {
+      "task": "Parse and store order details from purchase receipts."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract the sender's email from a consumer email."
+    },
+    {
+      "task": "Generate a summary of actions taken in a follow-up email."
+    },
+    {
+      "task": "Convert a list of contacts into a JSON object format."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender names from a list of email strings."
+    },
+    {
+      "task": "Parse JSON to summarize weekly task reminders."
+    },
+    {
+      "task": "Validate personal email format using a regular expression."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender email addresses from a list of messages."
+    },
+    {
+      "task": "Filter emails received in the last week for follow-up."
+    },
+    {
+      "task": "Parse invoice details from email content using regex."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender's email address from a raw email text."
+    },
+    {
+      "task": "Convert a CSV contact list into a JSON object."
+    },
+    {
+      "task": "Find all phone numbers formatted as (XXX) XXX-XXXX in text."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender email from a given email message."
+    },
+    {
+      "task": "Convert email data into a JSON object for processing."
+    },
+    {
+      "task": "Validate personal email format using a regular expression."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract names and email addresses from a text."
+    },
+    {
+      "task": "Convert email data into a JSON format for analysis."
+    },
+    {
+      "task": "Match and validate personal email addresses using regex."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract email addresses from a text for follow-ups."
+    },
+    {
+      "task": "Parse JSON data for expenses from consumer email receipts."
+    },
+    {
+      "task": "Validate personal email formats using regex pattern."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract all email addresses from a block of text."
+    },
+    {
+      "task": "Format a list of contacts into JSON structure."
+    },
+    {
+      "task": "Validate if a string is a proper email format."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender names from a list of emails."
+    },
+    {
+      "task": "Convert email timestamps to human-readable format."
+    },
+    {
+      "task": "Validate email addresses using a regex pattern."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender emails from a list of consumer emails."
+    },
+    {
+      "task": "Convert email subjects into a JSON format for organization."
+    },
+    {
+      "task": "Create a regex to find dates in email body text."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender names from emails using regex."
+    },
+    {
+      "task": "Generate a JSON object from incoming email data."
+    },
+    {
+      "task": "Automate email replies based on specific keyword detection."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender email addresses from a list of messages."
+    },
+    {
+      "task": "Convert a CSV contact list to a JSON format."
+    },
+    {
+      "task": "Match and extract dates from email body using regex."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract email addresses from a list of strings."
+    },
+    {
+      "task": "Parse the subject line from received email notifications."
+    },
+    {
+      "task": "Format inbox reminders into a JSON object for productivity."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender's email from a consumer email."
+    },
+    {
+      "task": "Generate a JSON object for email filtering rules."
+    },
+    {
+      "task": "Regex to find dates in email content."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender email addresses from a CSV file."
+    },
+    {
+      "task": "Parse email subject lines to identify urgent messages."
+    },
+    {
+      "task": "Convert email body content into JSON format for processing."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract email addresses from a string of text."
+    },
+    {
+      "task": "Generate a JSON object containing email subject and body."
+    },
+    {
+      "task": "Match all dates formatted as DD/MM/YYYY in a string."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract email addresses from a given text."
+    },
+    {
+      "task": "Convert a CSV file of emails to JSON format."
+    },
+    {
+      "task": "Find all dates in a string using regex."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract names and emails from a list of contacts."
+    },
+    {
+      "task": "Parse shopping receipts for total amount and purchase date."
+    },
+    {
+      "task": "Validate email addresses against standard email format."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender email from a consumer receipt."
+    },
+    {
+      "task": "Parse invoice details from a confirmation email."
+    },
+    {
+      "task": "Organize emails by sorting them into specific folders."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender email addresses from a list of emails."
+    },
+    {
+      "task": "Format a JSON object from email metadata for archiving."
+    },
+    {
+      "task": "Validate email address format using a regular expression."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender email from a given email message."
+    },
+    {
+      "task": "Parse JSON data from a consumer email receipt."
+    },
+    {
+      "task": "Find all email addresses in a block of text."
+    }
+  ]
+},
+{
+  "data": [
+    {
+      "task": "Extract sender email addresses from a list of emails."
+    },
+    {
+      "task": "Parse purchase confirmations for item names and prices."
+    },
+    {
+      "task": "Replace all instances of 'unsubscribe' in email content."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract email addresses from a text string."
+    },
+    {
+      "task": "Convert JSON data into a Python dictionary."
+    },
+    {
+      "task": "Match date formats in email content using regex."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender email addresses from a list of emails."
+    },
+    {
+      "task": "Generate a summary of email subject lines from inbox."
+    },
+    {
+      "task": "Validate personal email addresses using regex pattern."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract senders from a list of email strings."
+    },
+    {
+      "task": "Generate a JSON object from email metadata."
+    },
+    {
+      "task": "Match personal email addresses in a text."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender email addresses from my inbox."
+    },
+    {
+      "task": "Parse purchase receipts to find order totals."
+    },
+    {
+      "task": "Generate weekly email summary from daily messages."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender email addresses from a list of emails."
+    },
+    {
+      "task": "Filter emails that contain the word 'invoice' in the subject."
+    },
+    {
+      "task": "Convert email data into a structured JSON format."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender's email address from a string."
+    },
+    {
+      "task": "Parse JSON data for unread email count."
+    },
+    {
+      "task": "Match dates in email content using regex."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender names from a list of emails."
+    },
+    {
+      "task": "Parse email subject line for important dates."
+    },
+    {
+      "task": "Validate email addresses in a contact list."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender emails from a list of emails."
+    },
+    {
+      "task": "Parse purchase details from email receipts."
+    },
+    {
+      "task": "Organize emails by date into a JSON structure."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract subject lines from personal emails using regex."
+    },
+    {
+      "task": "Store email addresses in a JSON object from a list."
+    },
+    {
+      "task": "Sort emails by date received with a Python function."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender email addresses from a list of emails."
+    },
+    {
+      "task": "Convert a list of email subjects to a JSON object."
+    },
+    {
+      "task": "Validate personal email formats using a regular expression."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender emails from a given list of emails."
+    },
+    {
+      "task": "Create a JSON object from email subject and body."
+    },
+    {
+      "task": "Write a regex to match all email addresses in text."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Parse email body to extract order details."
+    },
+    {
+      "task": "Validate email format using regex pattern."
+    },
+    {
+      "task": "Convert email data into a structured JSON object."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Automate sorting emails into specific folders."
+    },
+    {
+      "task": "Extract purchase totals from receipts in emails."
+    },
+    {
+      "task": "Validate email addresses using a regex pattern."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender email from an email string."
+    },
+    {
+      "task": "Convert email data into a structured JSON object."
+    },
+    {
+      "task": "Match all email addresses in a given text."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender email addresses from incoming Gmail messages."
+    },
+    {
+      "task": "Format a JSON object to store email contacts."
+    },
+    {
+      "task": "Use regex to find tracking numbers in email body."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender email from a Gmail message."
+    },
+    {
+      "task": "Parse JSON list of unread emails."
+    },
+    {
+      "task": "Match invoice numbers in email body using regex."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract email addresses from a given text."
+    },
+    {
+      "task": "Sort emails by sender name in ascending order."
+    },
+    {
+      "task": "Validate email format using a regex pattern."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender email from a given email string."
+    },
+    {
+      "task": "Parse JSON data from a customer feedback email."
+    },
+    {
+      "task": "Validate personal email format using a regex pattern."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract sender email addresses from a list of emails."
+    },
+    {
+      "task": "Parse JSON data from incoming email notifications."
+    },
+    {
+      "task": "Validate personal email format using regex patterns."
+    }
+  ]
+},
+{
+  "tasks": [
+    {
+      "task": "Extract email addresses from a text string."
+    },
+    {
+      "task": "Convert a CSV file of emails to JSON format."
+    },
+    {
+      "task": "Match all personal email patterns using regex."
+    }
+  ]
 }

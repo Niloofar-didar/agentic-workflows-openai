@@ -15,6 +15,8 @@ from datetime import datetime
 import json
 
 #api key loading
+from openai.types.chat import ChatCompletionMessage
+
 load_dotenv()
 client= OpenAI()
 selected_model= "gpt-4o-mini"
@@ -38,9 +40,79 @@ def askBot(messagesHist, responseFormat, maxT):
     addMsgToHistory(messagesHist, responseContent, "assistant")
     return responseContent
 
+def askBotWithTool(messagesHist, responseFormat, maxT, tool):
+
+    apiParameter={
+        "messages" : messagesHist,
+        "model":  selected_model,
+        "max_tokens" : maxToken,
+        "tools":tool}
+
+    if responseFormat:
+        apiParameter["response_format"]=responseFormat
+    if maxT:
+        apiParameter["max_tokens"]=maxT
+
+    response= client.chat.completions.create(**apiParameter)
+    entire_responseContent=response.choices[0].message
+
+    # update the history
+    messagesHist.append(entire_responseContent)
+    return entire_responseContent
+
+def askBotGeneric(messagesHist,system=None, temperature=1.0, responseFormat=None, maxT=None, tool=None):
+    apiParameter = {
+        "messages": messagesHist,
+        "model": selected_model,
+        "max_tokens": maxToken,
+        "temperature": temperature}
+
+    if responseFormat:
+        apiParameter["response_format"] = responseFormat
+    if maxT:
+        apiParameter["max_tokens"] = maxT
+    if tool:
+        apiParameter["tools"] = tool
+    if system:
+        apiParameter["system"] = system
+
+    response = client.chat.completions.create(**apiParameter)
+    return response.choices[0].message
+
+# extract the text
+def text_from_message(message):
+    # for OpenAI message object, take .content attribute
+    if hasattr(message, 'content'):
+        return message.content if message.content else ""
+
+    # If it's already a string, return it
+    if isinstance(message, str):
+        return message
+
+    return ""
+
 # helper function to update the history
 def addMsgToHistory(messagesHist, content, role):
     messagesHist.append({"role": role, "content": content})
+
+
+def addMsgToHistoryGeneric(messagesHist, message, role):
+    # Check if 'message' is the OpenAI object (similar to your Anthropic check)
+    if isinstance(message, ChatCompletionMessage):
+        # Extract the string content
+        content_str = message.content
+
+        # If you only want to save the string, you must check if it exists.
+        if content_str is not None:
+            messagesHist.append({"role": role, "content": content_str})
+        elif message.tool_calls:
+            # If content is empty but tools exist, save the whole object
+            # otherwise the AI "chain of thought" breaks.
+            messagesHist.append(message)
+    else:
+        # If it's already a string or a simple dict
+        messagesHist.append({"role": role, "content": message})
+
 
 
 def generate_dataset(messages):
@@ -97,12 +169,10 @@ def writeToFile (message, fDir):
 
       file.write( "\n")
 
-
-############################# Starting the main code generation assistant #################
-# this is to control the code generation lenghth and quality, force minified Json
-messagesHist = [{"role": "system", "content": "You're a python engineer who writes very concise code."
+def demo():
+    ############################# Starting the main code generation assistant #################
+    # this is to control the code generation lenghth and quality, force minified Json
+    messagesHist = [{"role": "system", "content": "You're a python engineer who writes very concise code."
                 " Output ONLY minified code. No newlines, no indentation, no whitespace between keys and values.No explanations, no comments"}]
-dataset= generate_dataset(messagesHist)
+    dataset= generate_dataset(messagesHist)
 
-
-writeToDataset(dataset)

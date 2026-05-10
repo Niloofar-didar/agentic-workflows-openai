@@ -1,0 +1,76 @@
+[
+  {
+    "role": "user",
+    "content": "What is the exact time, formatted as HH:MM:SS?"
+  },
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "call_LNXM0usJIR0hWEpr21ysq95Y",
+        "function": {
+          "arguments": "{\"date_format\":\"%H:%M:%S\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_LNXM0usJIR0hWEpr21ysq95Y",
+    "content": "09:15:14"
+  },
+  {
+    "content": "The exact time is 09:15:14.",
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": null
+  }
+],
+[
+  {
+    "role": "user",
+    "content": "What is the exact time, formatted as HH:MM:SS?"
+  },
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "call_28BWr025CHz4qBPZauvUTYMK",
+        "function": {
+          "arguments": "{\"date_format\":\"%H:%M:%S\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_28BWr025CHz4qBPZauvUTYMK",
+    "content": "10:10:16"
+  },
+  {
+    "content": "The exact time is 10:10:16.",
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": null
+  }
+]

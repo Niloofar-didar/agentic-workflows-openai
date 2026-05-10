@@ -1,0 +1,483 @@
+[
+  {
+    "role": "user",
+    "content": "what is current time in HH:MM format? how about time in Y-M-d format? "
+  },
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "call_3jOWdotIOwxF7HMrssukVzrn",
+        "function": {
+          "arguments": "{\"date_format\": \"%H:%M\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      },
+      {
+        "id": "call_9M8O5cuH7afmlplSPKNpW5K5",
+        "function": {
+          "arguments": "{\"date_format\": \"%Y\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_3jOWdotIOwxF7HMrssukVzrn",
+    "content": "12:00"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_9M8O5cuH7afmlplSPKNpW5K5",
+    "content": "2026"
+  },
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "call_Q057uELu5dDx7cqYr8G66J5S",
+        "function": {
+          "arguments": "{\"date_format\":\"%Y-%m-%d\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_Q057uELu5dDx7cqYr8G66J5S",
+    "content": "2026-05-10"
+  },
+  {
+    "role": "assistant",
+    "content": "The current time is **12:00** (HH:MM format) and the current date is **2026-05-10** (Y-M-d format)."
+  }
+],
+[
+  {
+    "role": "user",
+    "content": "what is current time in HH:MM format? how about time in Y-M-d format? "
+  },
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "call_3jOWdotIOwxF7HMrssukVzrn",
+        "function": {
+          "arguments": "{\"date_format\": \"%H:%M\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      },
+      {
+        "id": "call_9M8O5cuH7afmlplSPKNpW5K5",
+        "function": {
+          "arguments": "{\"date_format\": \"%Y\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_3jOWdotIOwxF7HMrssukVzrn",
+    "content": "12:00"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_9M8O5cuH7afmlplSPKNpW5K5",
+    "content": "2026"
+  },
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "call_Q057uELu5dDx7cqYr8G66J5S",
+        "function": {
+          "arguments": "{\"date_format\":\"%Y-%m-%d\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_Q057uELu5dDx7cqYr8G66J5S",
+    "content": "2026-05-10"
+  },
+  {
+    "role": "assistant",
+    "content": "The current time is **12:00** (HH:MM format) and the current date is **2026-05-10** (Y-M-d format)."
+  }
+],
+[
+  {
+    "role": "user",
+    "content": "what is current time in HH:MM format? how about time in Y-M-d format? "
+  },
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "call_3jOWdotIOwxF7HMrssukVzrn",
+        "function": {
+          "arguments": "{\"date_format\": \"%H:%M\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      },
+      {
+        "id": "call_9M8O5cuH7afmlplSPKNpW5K5",
+        "function": {
+          "arguments": "{\"date_format\": \"%Y\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_3jOWdotIOwxF7HMrssukVzrn",
+    "content": "12:00"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_9M8O5cuH7afmlplSPKNpW5K5",
+    "content": "2026"
+  },
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "call_Q057uELu5dDx7cqYr8G66J5S",
+        "function": {
+          "arguments": "{\"date_format\":\"%Y-%m-%d\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_Q057uELu5dDx7cqYr8G66J5S",
+    "content": "2026-05-10"
+  },
+  {
+    "role": "assistant",
+    "content": "The current time is **12:00** (HH:MM format) and the current date is **2026-05-10** (Y-M-d format)."
+  }
+],
+[
+  {
+    "role": "user",
+    "content": "what is current time in HH:MM format? how about time in Y-M-d format? "
+  },
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "call_3jOWdotIOwxF7HMrssukVzrn",
+        "function": {
+          "arguments": "{\"date_format\": \"%H:%M\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      },
+      {
+        "id": "call_9M8O5cuH7afmlplSPKNpW5K5",
+        "function": {
+          "arguments": "{\"date_format\": \"%Y\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_3jOWdotIOwxF7HMrssukVzrn",
+    "content": "12:00"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_9M8O5cuH7afmlplSPKNpW5K5",
+    "content": "2026"
+  },
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "call_Q057uELu5dDx7cqYr8G66J5S",
+        "function": {
+          "arguments": "{\"date_format\":\"%Y-%m-%d\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_Q057uELu5dDx7cqYr8G66J5S",
+    "content": "2026-05-10"
+  },
+  {
+    "role": "assistant",
+    "content": "The current time is **12:00** (HH:MM format) and the current date is **2026-05-10** (Y-M-d format)."
+  }
+],
+[
+  {
+    "role": "user",
+    "content": "what is current time in HH:MM format? how about time in Y-M-d format? "
+  },
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "call_3jOWdotIOwxF7HMrssukVzrn",
+        "function": {
+          "arguments": "{\"date_format\": \"%H:%M\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      },
+      {
+        "id": "call_9M8O5cuH7afmlplSPKNpW5K5",
+        "function": {
+          "arguments": "{\"date_format\": \"%Y\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_3jOWdotIOwxF7HMrssukVzrn",
+    "content": "12:00"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_9M8O5cuH7afmlplSPKNpW5K5",
+    "content": "2026"
+  },
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "call_Q057uELu5dDx7cqYr8G66J5S",
+        "function": {
+          "arguments": "{\"date_format\":\"%Y-%m-%d\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_Q057uELu5dDx7cqYr8G66J5S",
+    "content": "2026-05-10"
+  },
+  {
+    "role": "assistant",
+    "content": "The current time is **12:00** (HH:MM format) and the current date is **2026-05-10** (Y-M-d format)."
+  }
+],
+[
+  {
+    "role": "user",
+    "content": "what is current time in HH:MM format? how about time in Y-M-d format? "
+  },
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "call_3jOWdotIOwxF7HMrssukVzrn",
+        "function": {
+          "arguments": "{\"date_format\": \"%H:%M\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      },
+      {
+        "id": "call_9M8O5cuH7afmlplSPKNpW5K5",
+        "function": {
+          "arguments": "{\"date_format\": \"%Y\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_3jOWdotIOwxF7HMrssukVzrn",
+    "content": "12:00"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_9M8O5cuH7afmlplSPKNpW5K5",
+    "content": "2026"
+  },
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "call_Q057uELu5dDx7cqYr8G66J5S",
+        "function": {
+          "arguments": "{\"date_format\":\"%Y-%m-%d\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_Q057uELu5dDx7cqYr8G66J5S",
+    "content": "2026-05-10"
+  },
+  {
+    "role": "assistant",
+    "content": "The current time is **12:00** (HH:MM format) and the current date is **2026-05-10** (Y-M-d format)."
+  }
+],
+[
+  {
+    "role": "user",
+    "content": "what is current time in HH:MM format? how about time in Y-M-d format? "
+  },
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "call_3jOWdotIOwxF7HMrssukVzrn",
+        "function": {
+          "arguments": "{\"date_format\": \"%H:%M\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      },
+      {
+        "id": "call_9M8O5cuH7afmlplSPKNpW5K5",
+        "function": {
+          "arguments": "{\"date_format\": \"%Y\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_3jOWdotIOwxF7HMrssukVzrn",
+    "content": "12:00"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_9M8O5cuH7afmlplSPKNpW5K5",
+    "content": "2026"
+  },
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "call_Q057uELu5dDx7cqYr8G66J5S",
+        "function": {
+          "arguments": "{\"date_format\":\"%Y-%m-%d\"}",
+          "name": "get_current_date"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_Q057uELu5dDx7cqYr8G66J5S",
+    "content": "2026-05-10"
+  },
+  {
+    "role": "assistant",
+    "content": "The current time is **12:00** (HH:MM format) and the current date is **2026-05-10** (Y-M-d format)."
+  }
+]
