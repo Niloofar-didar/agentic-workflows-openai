@@ -22,11 +22,11 @@ This setup enables the core LLM pipeline, including:
     ```text
     OPENAI_API_KEY=your_api_key_here
     ```
----
+
 
 ## Projects I Started With (In Order)
 
-![](../../OneDrive - Wayne State University/Documents/Agentic AI learning/agent-time-calculator.png)
+---<img width="3782" height="2234" alt="agent-time-calculator" src="https://github.com/user-attachments/assets/b79f1d36-46c4-4225-9223-260fca63c509" />
 
 
 1- **chatBot.py**
@@ -68,4 +68,12 @@ For that, in our server we need to enable a tool on our server. We start with cr
 Finally, the AI model generates the final output to be shown to the end user.
 This flow is shown through the image below taken from https://anthropic.skilljar.com/claude-with-the-anthropic-api/287752
 
-![img_1.png](img_1.png)
+<img width="1920" height="1080" alt="img_1" src="https://github.com/user-attachments/assets/ae24a73a-615e-44c7-b65a-7f9a7e4ea916" />
+
+
+Here is a demo of the interactive UI I implemented and shows the use of two Tools to respond to my prompt.
+
+https://github.com/user-attachments/assets/8a65e74b-83b8-4fcf-933e-c155b4fc6526
+
+
+
