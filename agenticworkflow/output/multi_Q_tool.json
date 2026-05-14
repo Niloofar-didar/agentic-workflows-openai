@@ -480,4 +480,83 @@
     "role": "assistant",
     "content": "The current time is **12:00** (HH:MM format) and the current date is **2026-05-10** (Y-M-d format)."
   }
+],
+[
+  {
+    "role": "user",
+    "content": "Set a reminder for my appointment. Its 111 days after May 1st, 2026."
+  },
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "call_asxWQ40Hbb06nT3HIpiZqxIo",
+        "function": {
+          "arguments": "{\"datetime_str\":\"2026-05-01\",\"duration\":111,\"unit\":\"days\",\"input_format\":\"%Y-%m-%d\"}",
+          "name": "add_duration_to_datetime"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_asxWQ40Hbb06nT3HIpiZqxIo",
+    "content": "Thursday, August 20, 2026 12:00:00 AM"
+  },
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "call_smt1rXIV0pKWO49ctmjTKSrw",
+        "function": {
+          "arguments": "{}",
+          "name": "set_reminder"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_smt1rXIV0pKWO49ctmjTKSrw",
+    "content": "Error: set_reminder() missing 2 required positional arguments: 'content' and 'timestamp'"
+  },
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": [],
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "call_uALm3us9cfj5GK7RH6clkQGh",
+        "function": {
+          "arguments": "{\"content\":\"Appointment Reminder\",\"timestamp\":\"Thursday, August 20, 2026 12:00:00 AM\"}",
+          "name": "set_reminder"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_uALm3us9cfj5GK7RH6clkQGh",
+    "content": "None"
+  },
+  {
+    "role": "assistant",
+    "content": "I've set a reminder for your appointment on **Thursday, August 20, 2026**."
+  }
 ]
