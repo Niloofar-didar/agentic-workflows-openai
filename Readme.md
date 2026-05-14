@@ -64,8 +64,11 @@ The test results sample is as below, also provided in output/prompt_evaluation.j
 
 ** 4- A reminder Tool - Connectivity to external services  **
 For some applications, AI may not know the exact solution or may require extra info to act upon. For instance, if we ask AI to remind us in 4 hours, it requires accessing some tools such as the current datetime, calculating the alarm time from now (duration), and a reminder set to send the user and alert.
-For that, in our server we need to enable a tool on our server. We start with creating a tool to calculate the time, we use an schema to show AI models how the tools work. The AI model generates the expected input, sent it back to our server, then in our server, we run the built tool and reply to AI model with the result and the expected output format.
-Finally, the AI model generates the final output to be shown to the end user.
+For that, in our server we need to enable a tool on our server. We start with creating a tool to calculate the time, we use an schema to show AI models how the tools work. The AI model generates the expected input, sent it back to our server, then in our server, we run the built tool and reply to AI model with the result and the expected output format. The tools we used include current date time calculator, duration addition to current time, and timer setter which is a simple function that prints the result to the user.
+Finally, the AI model generates the final output to be shown to the end user as shown in the following.
+
+<img width="2790" height="1348" alt="reminder app" src="https://github.com/user-attachments/assets/1cb91956-2c9c-47e8-a034-a037e7e78141" />
+
 This flow is shown through the image below taken from https://anthropic.skilljar.com/claude-with-the-anthropic-api/287752
 
 <img width="1920" height="1080" alt="img_1" src="https://github.com/user-attachments/assets/ae24a73a-615e-44c7-b65a-7f9a7e4ea916" />
