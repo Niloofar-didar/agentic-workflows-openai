@@ -40,18 +40,21 @@ def askBot(messagesHist, responseFormat, maxT):
     addMsgToHistory(messagesHist, responseContent, "assistant")
     return responseContent
 
-def askBotWithTool(messagesHist, responseFormat, maxT, tool):
+def askBotWithTool(messagesHist, responseFormat=None, maxT=None, tool=None):
 
     apiParameter={
         "messages" : messagesHist,
         "model":  selected_model,
-        "max_tokens" : maxToken,
-        "tools":tool}
+        "max_tokens" : maxToken
+      }
 
     if responseFormat:
         apiParameter["response_format"]=responseFormat
     if maxT:
         apiParameter["max_tokens"]=maxT
+
+    if(tool)  :
+        apiParameter["tools"] = tool
 
     response= client.chat.completions.create(**apiParameter)
     entire_responseContent=response.choices[0].message

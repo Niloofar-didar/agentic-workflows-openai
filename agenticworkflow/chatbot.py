@@ -66,26 +66,29 @@ def addMsgToHistory(messagesHist, content, role):
 
 ############################# Starting the main chatBot app #################
  # add a system instruction for the whole conversation from AI response to be brief
-messagesHist=[{"role": "system", "content": "Be concise. Answer in one or two sentences only."}]
+def chatDemo():
+    messagesHist=[{"role": "system", "content": "Be concise. Answer in one or two sentences only."}]
 
-print("Starting chat with a bot. If you want to finish, type 'exit'")
-userQuery=input("> ")
-while(userQuery!="exit"):
+    print("Starting chat with a bot. If you want to finish, type 'exit'")
+    userQuery=input("> ")
+    while(userQuery!="exit"):
 
-    addMsgToHistory(messagesHist,userQuery ,"user")
-    #result_1 = askBot(messagesHist)
-    #print(result_1)
-    askBotWithStreaming(messagesHist)
-    userQuery = input("\n> ")
+        addMsgToHistory(messagesHist,userQuery ,"user")
+        #result_1 = askBot(messagesHist)
+        #print(result_1)
+        askBotWithStreaming(messagesHist)
+        userQuery = input("\n> ")
 
-#writing to a txt file
-with open ("output/chat_with_bot.txt", 'a') as file:
-    currentT= datetime.now().strftime("%Y-%m-%d %H:%M")
-    file.write(f"new chat\n Time: [{currentT}]\n")
-    for entry in messagesHist:
-        file.write(str(entry))
-        file.write("\n")
+    #writing to a txt file
+    with open ("output/chat_with_bot.txt", 'a') as file:
+        currentT= datetime.now().strftime("%Y-%m-%d %H:%M")
+        file.write(f"new chat\n Time: [{currentT}]\n")
+        for entry in messagesHist:
+            file.write(str(entry))
+            file.write("\n")
 
-    file.write( "\n")
+        file.write( "\n")
 
-print("Conversation ended! Enjoy your day!")
+    print("Conversation ended! Enjoy your day!")
+
+chatDemo()
