@@ -84,7 +84,8 @@ In this project, we create a multi-index rag pipeline that answers to the user's
 We create two search methods: 1-semantic search (vector Index) and 2-texted-based search (BM25 Index) that finds the most closet section of the report to user's question.
 For chunking the report file, we use section-based method because the file structure has an appropriate marks to separate the sections.
 
-6-Parking lot app, image supported scenario where we ask the level of congestion and safetyness of the parkings. In the following the images of the parkings along with the response from the app is shown.
+6-Multimodal features: image processing:
+Parking lot app, image supported scenario where we ask the level of congestion and safetyness of the parkings. In the following the images of the parkings along with the response from the app is shown.
 
 Image_1:
 
@@ -96,5 +97,11 @@ image_2:
 <img width="1400" height="700" alt="image" src="https://github.com/user-attachments/assets/2a76b964-d072-46e8-af49-6d6c31a3a3a1" />
 
 
+6-Multimodal features: PDF processing:
+In this project, I feed a wiki-pedia pdf about human's evolution and ask openAI about the document.
+In the following, you can see a sample response:
+
+{'role': 'user', 'content': [{'type': 'input_text', 'text': 'very concisely and through one sentence tell me what is this file about?'}, {'type': 'input_file', 'filename': 'human_ev.pdf', 'file_data': '[FILE_DATA_REMOVED]'}]}
+{'role': 'assistant', 'content': 'The file is about recent human evolution, discussing topics like adaptation, genetic drift, and the interbreeding of early human species.'}
 
 
