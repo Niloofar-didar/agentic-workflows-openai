@@ -112,7 +112,7 @@ In the following, you can see a sample response:
       {
         "type": "input_file",
         "filename": "human_ev.pdf",
-        "file_data": "[FILE_DATA_REMOVED]"
+        "file_data": "[FILE_DATA]"
       }
     ]
   },
