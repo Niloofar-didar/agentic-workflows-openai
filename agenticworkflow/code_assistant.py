@@ -22,7 +22,7 @@ client= OpenAI()
 selected_model= "gpt-4o-mini"
 maxToken=65
 
-def askBot(messagesHist, responseFormat, maxT):
+def askBot(messagesHist, responseFormat=None, maxT=None):
 
     apiParameter={
         "messages" : messagesHist,
