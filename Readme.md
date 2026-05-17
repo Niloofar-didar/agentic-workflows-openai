@@ -1,3 +1,4 @@
+
 # Collection of projects and experiments documenting my learning journey with LLMs.
 This repository focuses on building practical applications using learnings from Claude (Anthropic) and implementation via OpenAI APIs.
 
@@ -82,4 +83,18 @@ https://github.com/user-attachments/assets/8a65e74b-83b8-4fcf-933e-c155b4fc6526
 In this project, we create a multi-index rag pipeline that answers to the user's question based on a report.md file in an efficient way.
 We create two search methods: 1-semantic search (vector Index) and 2-texted-based search (BM25 Index) that finds the most closet section of the report to user's question.
 For chunking the report file, we use section-based method because the file structure has an appropriate marks to separate the sections.
+
+6-Parking lot app, image supported scenario where we ask the level of congestion and safetyness of the parkings. In the following the images of the parkings along with the response from the app is shown.
+
+Image_1:
+
+<img width="512" height="260" alt="parking_2" src="https://github.com/user-attachments/assets/42ac3f6e-dbd5-4cd6-bb59-241fff10607f" />
+
+image_2:
+
+<img width="512" height="250" alt="parking_1" src="https://github.com/user-attachments/assets/bec44f6d-870e-4aa3-a13a-d4fd9f9b7a40" />
+<img width="1400" height="700" alt="image" src="https://github.com/user-attachments/assets/2a76b964-d072-46e8-af49-6d6c31a3a3a1" />
+
+
+
 
