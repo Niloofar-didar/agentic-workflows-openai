@@ -78,5 +78,8 @@ Here is a demo of the interactive UI I implemented and shows the use of two Tool
 
 https://github.com/user-attachments/assets/8a65e74b-83b8-4fcf-933e-c155b4fc6526
 
-
+5- Multi-Index Rag Pipeline:
+In this project, we create a multi-index rag pipeline that answers to the user's question based on a report.md file in an efficient way.
+We create two search methods: 1-semantic search (vector Index) and 2-texted-based search (BM25 Index) that finds the most closet section of the report to user's question.
+For chunking the report file, we use section-based method because the file structure has an appropriate marks to separate the sections.
 
