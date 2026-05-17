@@ -51,19 +51,19 @@ that results in a result with higher quality. i.e., higher score. The overview o
 The grading system is done using the two approaches: 1-code format evaluator leveraging python packages to check the output format, and 2- using AI system for grading the result with a scale of 1-10.
 The test results sample is as below, also provided in output/prompt_evaluation.json.
 
-```json
+```diff
 {
-  "score": 8.5,
++  "score": 8.5,
   "reasoning": "Effectively identifies valid emails overall",
   "test_case": {
     "task": "Extract email addresses from a list of consumer emails.",
     "format": "python"
   },
-  "output": "import re;emails=[\"example1@example.com\",\"not_an_email\",\"test@email.com\",\"hello@world.com\"];valid_emails=[email for email in emails if re.match(r\"[^@]+@[^@]+\\.[^@]+\",email)];print(valid_emails)"
+-  "output": "import re;emails=[\"example1@example.com\",\"not_an_email\",\"test@email.com\",\"hello@world.com\"];valid_emails=[email for email in emails if re.match(r\"[^@]+@[^@]+\\.[^@]+\",email)];print(valid_emails)"
 }
 ```
 
-** 4- A reminder Tool - Connectivity to external services  **
+**4- A reminder Tool - Connectivity to external services**
 For some applications, AI may not know the exact solution or may require extra info to act upon. For instance, if we ask AI to remind us in 4 hours, it requires accessing some tools such as the current datetime, calculating the alarm time from now (duration), and a reminder set to send the user and alert.
 For that, in our server we need to enable a tool on our server. We start with creating a tool to calculate the time, we use an schema to show AI models how the tools work. The AI model generates the expected input, sent it back to our server, then in our server, we run the built tool and reply to AI model with the result and the expected output format. The tools we used include current date time calculator, duration addition to current time, and timer setter which is a simple function that prints the result to the user.
 Finally, the AI model generates the final output to be shown to the end user as shown in the following.
@@ -79,7 +79,7 @@ Here is a demo of the interactive UI I implemented and shows the use of two Tool
 
 https://github.com/user-attachments/assets/8a65e74b-83b8-4fcf-933e-c155b4fc6526
 
-5- Multi-Index Rag Pipeline:
+**5- Multi-Index Rag Pipeline:**
 In this project, we create a multi-index rag pipeline that answers to the user's question based on a report.md file in an efficient way.
 We create two search methods: 1-semantic search (vector Index) and 2-texted-based search (BM25 Index) that finds the most closet section of the report to user's question.
 For chunking the report file, we use section-based method because the file structure has an appropriate marks to separate the sections.
@@ -97,11 +97,28 @@ image_2:
 <img width="1400" height="700" alt="image" src="https://github.com/user-attachments/assets/2a76b964-d072-46e8-af49-6d6c31a3a3a1" />
 
 
-6-Multimodal features: PDF processing:
+**6-Multimodal features: PDF processing:**
 In this project, I feed a wiki-pedia pdf about human's evolution and ask openAI about the document.
 In the following, you can see a sample response:
-
-{'role': 'user', 'content': [{'type': 'input_text', 'text': 'very concisely and through one sentence tell me what is this file about?'}, {'type': 'input_file', 'filename': 'human_ev.pdf', 'file_data': '[FILE_DATA_REMOVED]'}]}
-{'role': 'assistant', 'content': 'The file is about recent human evolution, discussing topics like adaptation, genetic drift, and the interbreeding of early human species.'}
-
-
+```diff
+[
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "input_text",
+        "text": "very concisely and through one sentence tell me what is this file about?"
+      },
+      {
+        "type": "input_file",
+        "filename": "human_ev.pdf",
+        "file_data": "[FILE_DATA_REMOVED]"
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+-    "content": "The file is about recent human evolution, discussing topics like adaptation, genetic drift, and the interbreeding of early human species."
+  }
+]
+```
