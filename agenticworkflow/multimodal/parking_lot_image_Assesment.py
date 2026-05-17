@@ -94,12 +94,14 @@ def process_file(multimodal_files, file_type,media_type ):
             writeToFile(messages, fDir=f"output/{file_addr}.txt")
 
 
-################### starting the image process #####################
+################### Processing image files #####################
 
-#image_files= ["parking_1.png" , "parking_2.png"]
-# process_file(image_files,type= "input_image", media_type="image/png")
+image_files= ["input/parking_1.png" , "input/parking_2.png"]
+process_file(image_files,type= "input_image", media_type="image/png")
+
+
+############# processing PDF file
 prompt="very concisely and through one sentence tell me what is this file about?"
-file=["human_ev.pdf"]
+file=["input/human_ev.pdf"]
 process_file(file,file_type= "input_file", media_type="application/pdf")
 
-#type=input_file media=application/pdf
