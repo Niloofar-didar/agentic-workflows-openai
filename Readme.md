@@ -90,7 +90,7 @@ We create two search methods: 1-semantic search (vector Index) and 2-texted-base
 For chunking the report file, we use section-based method because the file structure has an appropriate marks to separate the sections.
 
 ---
-6-Multimodal features: image processing:
+***6-Multimodal features: image processing:***
 Parking lot app, image supported scenario where we ask the level of congestion and safetyness of the parkings. In the following the images of the parkings along with the response from the app is shown.
 
 Image_1:
